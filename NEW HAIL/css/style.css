@@ -1,0 +1,58 @@
+@import "compass/css3";
+
+@font-face {
+  font-family: "BMKIRANGHAERANG";
+  src: url('BMKIRANGHAERANG-TTF.ttf') format('ttf');
+      
+  font-family:"LetterGothicStd";
+  src:url("fonts/LetterGothicStd-Slanted.woff")format("woff");
+}
+
+body  {
+	margin: 0;
+	color: #444;
+  	background-image: url("../paper.jpg");}
+
+.world {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.button {
+	position: absolute;
+  	top: 80%;
+  	left: 46%;
+	font-family: "BMKIRANGHAERANG";
+    text-rendering: auto;
+    color: grey;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align:center;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    background-color: #d3d3d3;
+    background-opacity:1;
+    opacity:1;
+    box-sizing: border-box;
+    margin: 0;
+    font: 400 20px system-ui;
+    padding: 2px 8px 4px;
+    border-width: none;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-image: initial;
+}
+
+.button:hover {
+  background-color: darkgrey;
+  color: white;
+  border-width: none;
+
+}

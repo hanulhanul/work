@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bee Swarm</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <!-- Icon -->
+  <link rel="icon" href="h.png" type="image/png" sizes="16x16">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.3.0/lib/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tweakpane@1.5.8/dist/tweakpane.min.js"></script>
+  <script>
+    // require https://cdn.jsdelivr.net/npm/tweakpane@1.5.8/dist/tweakpane.min.js
+    // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js
+    // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js
+
+    const pane = new Tweakpane();
+    const time = new Tweakpane();
+
+    const para = {};
+
+    const blocks = 30;
+
+    var colorPallete = ["f94144", "f3722c", "f8961e", "f9c74f", "90be6d", "43aa8b", "577590"];
+    var position = 0;
+
+    var points = [];
+    var blockSize;
+    var bgColor;
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      background(255);
+      shuffle(colorPallete, true);
+      frameRate(blocks);
+
+      initPattern();
+
+      para.dir = 2;
+      pane.addInput(para, "dir", {
+        min: 0,
+        max: 10
+      });
+      para.time = -40;
+      pane.addInput(para, "time", {
+        min: -50,
+        max: 0
+      });
+
+    }
+
+    function draw() {
+      generatePattern();
+      pane.refresh();
+    }
+
+    function getColor() {
+
+      var v = colorPallete[position];
+      position++;
+      if (position == colorPallete.length) {
+        colorPallete = shuffle(colorPallete);
+        position = 0;
+      }
+
+      return str("#" + v);
+    }
+
+    function mousePressed() {
+      initPattern();
+    }
+
+    function initPattern() {
+      clear();
+      noStroke();
+      points = [];
+
+      bgColor = getColor();
+      blockSize = int(windowWidth / blocks);
+      if (blockSize % 10 == 0)
+        blockSize += 10;
+
+      for (let i = 0; i < windowWidth; i++) {
+        points[i] = [];
+        for (let j = 0; j < windowHeight; j++) {
+          points[i][j] = int(random(2, 2));
+        }
+      }
+
+    }
+
+    function generatePattern() {
+
+      let dir = 1;
+      let delta, deltaNoise;
+
+      for (let m = 0; m < windowWidth + 1; m += blockSize) {
+        for (let n = 0; n < windowHeight + 1; n += blockSize) {
+
+          if ((m) % 2 == 0, (n) % 2 == 0) {
+            dir = 5;
+            fill(bgColor);
+          } else {
+            dir = -5;
+            fill('black');
+          }
+
+          deltaNoise = noise(m + n, frameCount / para.time);
+          delta = map(deltaNoise, 0.3, 0.7, -blockSize, blockSize);
+
+          var offsetX = (noise(m + para.time));
+          var offsetY = (noise(n + para.time));
+          circle(m + offsetX, n + offsetY, blockSize + para.dir * delta);
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative Quotes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Work Sans:300,700');
+
+    body {
+      background: rgb(34, 193, 195);
+      background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+      text-align: center;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .wrap {
+      display: table;
+      padding: 10% 10% 0 10%;
+      margin: 10% auto;
+      text-align: center;
+    }
+
+    #title {
+      font-size: 80px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: .8em;
+    }
+
+    #subtitle {
+      margin-top: 5%;
+      font-weight: 300;
+      font-size: 4vw;
+      font-weight: normal;
+      line-height: 5vw;
+    }
+  </style>
+  <!-- Icon -->
+  <link rel="icon" href="h.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+  <main>
+    <div class="wrap">
+      <div id="title"></div>
+      <div id="subtitle"></div>
+    </div>
+  </main>
+</body>
+
+<script>
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+  }
+
+  document.getElementById("title").textContent = generateTitle();
+  document.getElementById("subtitle").textContent = generateSubtitle();
+
+  function generateTitle() {
+    var abstracts = ["Love", "Lover", "Friendship", "Affection", "Care", "Understanding", "Language", "Community"];
+    var actions = ["Hurts", "Stays", "Touches", "Hits", "Brightens", "Dims", "Shines", "Creates", "Says", "Cries", "Dances", "Speaks", "Surprises", "Dissappoints", "Betrays", "Lies", "Tempts"];
+    var descriptions = ["Lost", "Happy", "Wet", "Forgotten", "Fallen", "Delightful", "Valiant", "Golden", "Painful", "Merry", "Brilliant", "Wonderful", "Sullen", "Angry", "Fantastical", "Cowardly", "Silver", "Tragic", "Jolly", "Festive", "Mad",
+      "Enchanted", "Cruel", "Wistful", "Dark", "Untold"
+    ];
+    var objects = ["Garden", "Hell", "Heaven", "Dream", "Word", "Dialect", "Promise", "Lie", "Darkness", "Letter", "Confession", "Mouth", "Shadow", "Tear", "Homeland", "Forest", "Bedroom", "Book", "Hand", "Lip", "Night", "Day", "Body"];
+
+    var abstract = sample(abstracts);
+    var action = sample(actions);
+    var description = sample(descriptions);
+    var object = sample(objects);
+
+    var title = "";
+    if (Math.random() < 0.5) {
+      title = `${abstract} ${action} in ${description} ${object}`;
+    } else {
+      title = `${abstract} is ${description} when ${object} ${action}`;
+    }
+
+    return title;
+  }
+
+  function generateSubtitle() {
+    var adjectives = ["Lost", "Forgotten", "Tragic", "Sad", "Wonderful", "Limited", "Crazy", "Iconic", "Dramatic", "Incredible", "Unbelievable", "Enchanted", "Wise", "Remastered", "Dark", "Untold", "Psychotic"];
+    var formats = ["Tale", "Novel", "Book in Twenty Parts", "Song", "Short Story", "Legend", "Mystery", "Comedy", "Musical", "Indie Film", "Lecture Series"];
+
+    var adjective = sample(adjectives);
+    var format = sample(formats);
+    var subtitle = `The  ${adjective}  ${format}`;
+
+    return subtitle;
+  }
+
+  function sample(array) {
+    const index = Math.floor(Math.random() * array.length);
+    return array[index];
+  }
+</script>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Pen</title>
+  <link rel="stylesheet" href="NeonPen.css">
+  <!-- Icon -->
+  <link rel="icon" href="h.png" type="image/png" sizes="16x16">
+  <!-- Load the Paper.js library -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.min.js"></script>
+  <!-- Define inlined PaperScript associate it with myCanvas -->
+  <script type="text/paperscript" canvas="canvas">
+
+  // language paperscript
+  // require https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.min.js
+
+  //PEN + DOT
+  tool.minDistance = 5;
+  tool.maxDistance = 100;
+  var path;
+
+  function onMouseDown(event){
+    //PEN
+    path = new Path();
+    path.fillColor = {
+      hue: Math.random() * 360,
+      saturation: 1,
+      brightness: 1
+    };
+    path.add(event.point);
+  }
+
+  function onMouseDrag(event) {
+    //PEN
+    var motion = event.delta/2;
+    motion.angle += 45;
+    var top = event.middlePoint + motion;
+    var bottom = event.middlePoint - motion;
+    path.add(top);
+    path.insert(0,bottom);
+    path.smooth();
+    //DOT
+    var dot = new Path.RegularPolygon({
+      center: event.middlePoint,
+      sides: 8,
+      radius: event.delta.length/2
+    });
+    dot.fillColor = {
+      hue: Math.random() * 360,
+      saturation: 1,
+      brightness: 1
+    };
+    dot.opacity = 0.4;
+  }
+
+    function onMouseUp(event) {
+      //PEN
+      path.add(event.point);
+      path.closed = true;
+      path.smooth();
+    }
+
+</script>
+</head>
+
+<body>
+  <canvas id="canvas" resize></canvas>
+</body>
+
+</html>

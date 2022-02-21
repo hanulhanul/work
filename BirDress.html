@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ütf=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HANUL</title>
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Icon -->
+  <link rel="icon" href="h.png" type="image/png" sizes="16x16">
+</head>
+
+<body class="detailBackground">
+
+  <!-- Title -->
+  <section id="title">
+
+    <nav class="navbar navbar-expand-md fixed-top bg-white">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-folder-open"></i> Hanul Park</a>
+      <ul class="navbar-nav ms-auto">
+        <a class="nav-item nav-link text-dark" aria-current="page" href="info.html">INFO <i class="fa-solid fa-briefcase"></i></a>
+      </ul>
+    </nav>
+
+  </section>
+
+  <!-- Detail -->
+  <section class="detail">
+
+    <div class="row">
+      <h3 class="colorful col-lg-5 col-md-5">
+        BirDress
+      </h3>
+      <h4 class="col-lg-7 col-md-7">AI, Machine Learning + Fashion Design + Nature Data</h4>
+      <h5 class="col-lg-4 col-md-4">Explorations of Contemporary Fashion Design with Datasets of Bird Imagery using Machine Learning Technology <u><a href="https://en.wikipedia.org/wiki/StyleGAN" target="_blank">StyleGAN</a></u>
+        <br /><br />2021
+      </h5>
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="col-lg-7 col-md-7">
+        <h5>Tools | Google Collab, Apple Keynote, Adobe Illustrator, InDesign, Premiere Pro
+          <br />Code | Python
+        </h5>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <h6>I. PITCH DECK</h6>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <iframe allowtransparency="true" src="BirDress/Presentation/index.html" width="100%" height="500vw" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <h6>II. PROCESS</h6>
+      </div>
+      <p class="col-lg-4 col-md-4">
+        Questions
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <p class="col-lg-7 col-md-7">
+        Nature offers us creative resources.
+        <br /><br />HOW WOULD DATA OF ORGANIC LIFE FORMS IN NATURE INTERACT WITH CONTEMPORARY FASHION DESIGN?
+        <br /><br />Machine learning helps us manifest.
+        <br /><br />HOW CAN FASHION DESIGN DRAW DIRECT INSPIRATION FROM NATURE THROUGH STYLEGAN TECHNOLOGY?
+      </p>
+      <p class="col-lg-4 col-md-4">
+        Domains
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="col-lg-7 col-md-7">
+        <img class="detailImage" src="BirDress/Domains.png" style="width:100%">
+      </div>
+      <p class="col-lg-4 col-md-4">
+        Datasets
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <p class="col-lg-7 col-md-7">
+        For bird data, CalTech’s Birds (2011) dataset from kaggle.com has been accessed at first. The initial dataset included 200 different bird species with 11,788 PNG file images. Then, selection of bird species with stricking visual features took
+        place, leaving the dataset with 83 different species and the total of 4980 photographs. Then, selection of 1 largest and clearest image per bird took place, leaving the dataset with only 83 images.
+        <br /><br />
+        Initially, the project planned to use only the images of birds that have gone extinct. The reasons of extinction varied, but the primary cause was due to environmental issues, such as climate change, global warming, deforestation, and
+        desertification. However, it was proven to be extremely difficult to collect images of extinct species during the research process. The project had to shift its direction from environmentally oriented inquiry to a more visually driven
+        endeavor, while recognizing the potentiality to involve its initial inquiry at an appropriate time in the future.
+        <br /><br />
+        <img class="detailImage" src="BirDress/Dataset_Birds.png" style="width:100%">
+        For fashion data, the visionary designer Iris van Herpen’s haute
+        couture dress images were manually collected from the archive
+        of the brand’s official website. The total 400 PNG files from 15
+        distinct collections were compiled into a dataset. All of Iris van
+        Herpen’s haute couture collections have been accessed, and
+        their official titles are Roots of Rebirth, Sensory Seas, Hypnosis,
+        Shift Souls, Syntopia, Ludi Naturae, Aeriform, Between The Lines,
+        Seijaku, Lucid, Wilderness Embodied, Voltage, Hybrid Holism, Micro,
+        and Capriole in the order listed on the brand’s website.
+        <br /><br />
+        Iris van Herpen’s haute couture was chosen as the collections
+        are predomonantly dresses, which in essence resembles the
+        appearances of birds. Herpen’s pattern-oriented, boldly shaped
+        dress designs invoke organic, kinetic movements of living creatures,
+        especially those of feathered birds.
+      </p>
+      <p class="col-lg-4 col-md-4">
+        Training
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <p class="col-lg-7 col-md-7">
+        When machine was trained with the dress data alone, it failed to
+        produce any meaningful results. It was trained for over 6 hours,
+        but the results stayed the same, as shown above. As the first mixed
+        data training attempt, the dress dataset was added onto the ongoing
+        training of the bird dataset, the machine could not even
+        start the learning process, and the following error occured: "axes
+        don’t match the array." The second mixed data training approach
+        was to train from the beginning a mixed dataset of selected bird
+        images and randomly seletected dress images. Again, the same
+        error occured: "axes don’t match the array."
+        <br /><br />
+        The third and successful method of mixed data training was the
+        following: refine the mixed dataset for bird images and dress images
+        to be axially aligned, by removing all bird images with horizontal
+        layouts and removing all dress images with perpendicularly
+        thin layouts, so that all remaining bird images resemble the
+        general physiological human shapes and all remianing dress images
+        resemble the general phisiological bird shapes. The method
+        was effective, and the project landed on a powerful set of results.
+      </p>
+      <div class="col-lg-12 col-md-12">
+        <h6>III. PRODUCT</h6>
+      </div>
+      <p class="col-lg-4 col-md-4">
+        SELECTED OUTPUTS AFTER 6 HOURS OF TRAINING
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <p class="col-lg-7 col-md-7">
+        The training sessions lasted for the total of 12 hours, but the most prominent, interesting, and visually notable results emerged after 6 hours and 9 hours. The images from 6 hours of
+        training display elegant layers and fuzzy volumes. The ruffle-like texures add complexity to the overall designs.
+      </p>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (1).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (2).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (3).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (4).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (5).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (6).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (7).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (8).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (9).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (10).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (11).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/6_Hours (12).png" style="width:100%">
+      </div>
+      <p class="col-lg-4 col-md-4">
+        SELECTED OUTPUTS AFTER 9 HOURS OF TRAINING
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <p class="col-lg-7 col-md-7">
+        After 9 hours of training, the project developed to images of more voluminous, colorful, and dynamical dress designs. The continued training after 9 hours resulted in the dissolution of the coherent shapes achieved at 6th and 9th
+        hour points. Such a phenomenon asks for more explorations of StyleGAN training.
+      </p>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (1).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (2).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (3).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (4).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (5).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (6).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (7).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (8).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (9).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (10).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (11).png" style="width:100%">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img class="detailImage" src="BirDress/9_Hours (12).png" style="width:100%">
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <h6>IV. POSTERS</h6>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img class="detailImage" src="BirDress/poster_1.JPEG" style="width:100%">
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img class="detailImage" src="BirDress/poster_2.JPEG" style="width:100%">
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img class="detailImage" src="BirDress/poster_3.JPEG" style="width:100%">
+      </div>
+      <div class="col-lg-12 col-md-6">
+        <p style="font-family:WorkSans-Light">
+          *created in the style of and as homage to designer <u><a href="http://www.davidcarsondesign.com/" target="_blank">David Carson</a></u>
+        </p>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <h6>V. VIDEO</h6>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <iframe class="detailImage" width="100%" height="500vw" src="https://www.youtube.com/embed/jGzjEio3J5A" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <img class="detailImage" src="BirDress/still1.png" style="width:100%">
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <img class="detailImage" src="BirDress/still2.png" style="width:100%">
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <img class="detailImage" src="BirDress/still3.png" style="width:100%">
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <img class="detailImage" src="BirDress/still4.png" style="width:100%">
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <h6>VI. CONCLUSION</h6>
+      </div>
+      <p class="col-lg-4 col-md-4">
+        Technology
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <p class="col-lg-7 col-md-7">
+        Visual Strength > Size of Dataset
+        <br /><br />Axial Alignment > Color Alignment
+      </p>
+      <p class="col-lg-4 col-md-4">
+        Concept
+      </p>
+      <div class="col-lg-1 col-md-1"></div>
+      <p class="col-lg-7 col-md-7">
+        StyleGAN's powerful learning and generating capacities can offer interesting abstracts.
+        <br /><br />Data of nature and fashion collaborate with each other in creative ways.
+      </p>
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="position-relative">
+      <p class="position-absolute bottom-0 end-0">© Copyright 2022 Hanul Park</p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5c33c2beb0.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>

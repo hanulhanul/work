@@ -1,0 +1,14 @@
+html,
+body {
+    padding: 0px;
+    overflow: hidden;
+    height: 100%;
+    background-color: black;
+    /* background-image: radial-gradient(circle, #fffeb7, #ffefb7, #ffe2bf, #ffd8c9, #ffd2d2, #feced8, #f9cbe1, #f0c9eb, #e0c8f3, #cbc9f9, #b2cafb, #97cbf9); */
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}

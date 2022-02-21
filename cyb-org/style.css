@@ -1,0 +1,48 @@
+@font-face{
+  font-family:"Nunito-Regular";
+  src:url("../font/Nunito-Regular.ttf")format("ttf");
+}
+
+body {
+    font-family: "Nunito-Regular";
+  }
+
+  #cy {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    font-family: "Nunito-Regular";
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding: 10px;
+    line-height: 0%;
+    line-break: strict;
+  }
+
+  h2 {
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+
+  #citation{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    padding: 10px 10px;
+    cursor:pointer;
+  }
+
+  a{
+    color:black;
+    text-decoration:underline;
+  }
+
+  a:hover{
+    color:blue;
+  }
