@@ -69,9 +69,8 @@ function modelReady() {
 
 function mousePressed() {
   if (mouseX > 0 && mouseX < windowWidth && mouseY > 0 && mouseY < windowHeight) {
-    // let fs = fullscreen();
-    // fullscreen(!fs);
-    background(random(0, 155));
+    let fs = fullscreen();
+    fullscreen(!fs);
     // background(random(0, 255), random(0, 255), random(0, 255));
   }
 }
@@ -97,6 +96,8 @@ function keyTyped() {
 function draw() {
   // createCanvas(windowWidth, windowHeight);
   // image(cam, 0, 0, width, height);
+  // background(frameCount);
+  background(0,0,0,50);
 
   //move image by the width of image to the left
   translate(cam.width, 0);
@@ -121,7 +122,7 @@ function draw() {
 
   // We can call both functions to draw all keypoints and the skeletons
 
-  drawKeypoints();
+  // drawKeypoints();
 
   drawSkeleton();
 
@@ -158,11 +159,11 @@ function morphing_circle(x, y) {
 
     radius1 = noise(j * 0.001) * 20 + j * 2;
     stroke(radius1 * 3 % 255, 180, 255, 100);
-    strokeWeight(3);
+    strokeWeight(5);
 
     beginShape();
 
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < 50; i++) {
       let angle = map(i - 30, -30, 30, 0, 2 * PI) + PI;
       let radius2 = radius1 + map(data[abs(i - 30)], 0, 175, 10, 175);
       // let radius2 = radius1 + map(vol[abs(i - 30)], 0, 175, 10, 175);
@@ -184,7 +185,7 @@ function drawKeypoints() {
       let keypoint = pose.keypoints[j];
       // Only draw an ellipse is the pose probability is bigger than 0.2
       if (keypoint.score > 0.2) {
-        fill(random(155, 255), random(155, 255), random(155, 255), random(50, 100));
+        fill(random(155, 255), random(155, 255), random(155, 255));
         noStroke();
         ellipse(keypoint.position.x, keypoint.position.y, 10, 10);
       }
@@ -202,7 +203,7 @@ function drawSkeleton() {
       let partA = skeleton[j][0];
       let partB = skeleton[j][1];
       strokeWeight(10);
-      stroke(random(200, 255), random(200, 255), random(200, 255), random(25, 100));
+      stroke(random(200, 255), random(200, 255), random(200, 255));
       line(
         partA.position.x,
         partA.position.y,
