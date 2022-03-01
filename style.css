@@ -176,6 +176,10 @@ h2 {
   padding: 1% 0% 0% 0%;
 }
 
+.link:hover {
+    background-color: transparent;
+}
+
 .collapsible {
   border: none;
   margin: 8vw 2vw 8vw 2vw;
@@ -203,14 +207,14 @@ h2 {
   box-shadow: 0 0 15px #ffffff;
 }
 
-.greenGradient {
+.BlueButton1 {
   background-image: linear-gradient(to right, #D6EBFF 0%, #C2EEFF 50%);
   background-size: 200% auto;
   box-shadow: 0 0 5px #eee;
   cursor: pointer;
 }
 
-.blueGradient {
+.BlueButton2 {
   background-image: linear-gradient(to right, #C2EEFF 0%, #D6EBFF 50%);
   background-size: 200% auto;
   box-shadow: 0 0 5px #eee;
