@@ -493,6 +493,10 @@ ol, li {
   animation-name: none;
 }
 
+.location {
+  padding: 1px;
+}
+
 .oneImage {
   margin: 0 5px 40px 0;
   border: 0;
