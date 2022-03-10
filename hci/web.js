@@ -16,7 +16,7 @@ const params = {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
-  frameRate(10);
+  frameRate(30);
 
   cam = createCapture(VIDEO);
   cam.size(windowWidth, windowHeight);
