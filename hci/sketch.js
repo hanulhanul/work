@@ -113,7 +113,7 @@ function draw() {
 
   if (currentPose) {
     fill(random(0, 255), random(0, 255), random(0, 255), random(0, 5));
-    fuzzy_ellipse(currentPose.nose.x, currentPose.nose.y, 50, 50, 100);
+    fuzzy_ellipse(currentPose.nose.x, currentPose.nose.y, 30, 30, 100);
   }
 
   params.frame_rate = frameRate();
@@ -168,8 +168,8 @@ function drawSkeleton() {
       let partA = skeleton[j][0];
       let partB = skeleton[j][1];
       for (let k = 0; k < 1000; k++) {
-        const aa = random(-50, 50);
-        const bb = random(-50, 50);
+        const aa = random(-30, 30);
+        const bb = random(-30, 30);
         if (dist(0, 0, aa, bb) > 100) continue;
         strokeWeight(1);
         // stroke(random(0, 255), random(0, 255), random(0, 255), random(0, 10));
