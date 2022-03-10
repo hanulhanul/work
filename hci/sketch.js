@@ -33,9 +33,9 @@ function setup() {
   currentMillis = millis();
   previousMillis = millis();
 
-  input = new p5.AudioIn();
-
-  input.start();
+  // input = new p5.AudioIn();
+  //
+  // input.start();
 
   // const buffer = new Float32Array(44100);
   //
