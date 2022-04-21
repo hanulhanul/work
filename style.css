@@ -41,7 +41,7 @@
 }
 
 html {
-    overflow: auto;
+  overflow: auto;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
   transition: 0.5s;
 }
 
-/* info.html */
+/* index.html */
 #title {}
 
 .navbar {
@@ -160,11 +160,10 @@ h2 {
 
 .intro {
   font-family: "WorkSans-Light";
-  font-size: 2vw;
-  text-align: left;
-  line-height: 2.4vw;
-  width: 22em;
-  margin-top: 4vw;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 9vw;
 }
 
 .information {
@@ -177,7 +176,7 @@ h2 {
 }
 
 .link:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .collapsible {
@@ -291,7 +290,7 @@ h2 {
   font-size: 14px;
 }
 
-/* index.html */
+/* work.html */
 #work {
   position: relative;
 }
@@ -305,7 +304,7 @@ h2 {
   overflow-x: hidden;
   position: fixed;
   display: block;
-  scrollbar-width: none;
+  scrollbar-width: 100px;
   -ms-overflow-style: none;
 }
 
@@ -323,6 +322,30 @@ h2 {
 @media (max-width: 767.98px) {
   -webkit-overflow-scrolling: touch;
 }
+
+/* Designing for scroll-bar */
+/* * {
+  overflow-y: hidden;
+}
+::-webkit-scrollbar {
+  transform: rotate(-270deg) translateX(100%);
+  transform: rotate(90deg) translateY(666px);
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 500px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5000px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
 
 /* Project Names */
 h3 {
@@ -534,7 +557,6 @@ ol, li {
   border: 0;
   padding: 0;
 } */
-
 /* Sections */
 h6 {
   font-family: "WorkSans-Bold";
