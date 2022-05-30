@@ -33,14 +33,23 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .navbar-brand {
-  font-family: 'Spectral', serif;
+  font-family: 'Spectral-Light', serif;
   font-size: 22px;
 }
 
 .nav-item {
-  font-family: 'Spectral', serif;
-  font-size: 20px;
+  font-family: 'Spectral-Light', serif;
+  font-size: 22px;
   padding-left: 4vw;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 14px;
+  }
+  .nav-item {
+    font-size: 14px;
+  }
 }
 
 .li {
