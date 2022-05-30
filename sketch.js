@@ -40,7 +40,7 @@ function drawBranch(length) {
   myTurtle.turnLeft(4);
   myTurtle.moveForward(length * .2);
   myTurtle.turnLeft(4);
-  myTurtle.moveForward(length * .8);
+  myTurtle.moveForward(length * .7);
 
   // left child
   myTurtle.pushState();

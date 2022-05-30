@@ -33,12 +33,12 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .navbar-brand {
-  font-family: 'Spectral-Medium', serif;
+  font-family: 'WorkSans-Medium', sans-serif;
   font-size: 22px;
 }
 
 .nav-item {
-  font-family: 'Spectral-Regular', serif;
+  font-family: 'WorkSans-Regular', sans-serif;
   font-size: 20px;
   padding-left: 4vw;
 }
