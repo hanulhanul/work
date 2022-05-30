@@ -32,8 +32,6 @@
       myTurtle = new Turtle();
     }
 
-
-
     function draw() {
       myTurtle.penUp();
       myTurtle.moveTo(windowWidth / 2, windowHeight / 2);
@@ -41,7 +39,7 @@
 
       for (var i = 0; i < 100; i++) {
         myTurtle.moveForward(i / 10);
-        myTurtle.turnLeft(10);
+        myTurtle.turnLeft(1);
         drawLeaf();
       }
     }
