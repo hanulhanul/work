@@ -4,6 +4,11 @@
 /* animate.css */
 @import "~animate.css/animate.css";
 
+@font-face {
+    font-family: 'Spectral-Light', serif;
+    src: url('/font/Spectral/Spectral-Light.ttf');
+}
+
 html {
   overflow: auto;
 }
