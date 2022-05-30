@@ -6,19 +6,19 @@
 
 @font-face {
     font-family: 'Spectral-Light', serif;
-    src: url('/font/Spectral/Spectral-Light.ttf') format('ttf');
+    src: url('/font/Spectral-Light.ttf') format('ttf');
 }
 @font-face {
     font-family: 'WorkSans-Light', serif;
-    src: url('/font/Work_Sans/WorkSans-Light.ttf') format('ttf');
+    src: url('/font/WorkSans-Light.ttf') format('ttf');
 }
 @font-face {
     font-family: 'WorkSans-Regular', serif;
-    src: url('/font/Work_Sans/WorkSans-Regular.ttf') format('ttf');
+    src: url('/font/WorkSans-Regular.ttf') format('ttf');
 }
 @font-face {
     font-family: 'WorkSans-Medium', serif;
-    src: url('/font/Work_Sans/WorkSans-Medium.ttf') format('ttf');
+    src: url('/font/WorkSans-Medium.ttf') format('ttf');
 }
 
 html {
