@@ -6,7 +6,19 @@
 
 @font-face {
     font-family: 'Spectral-Light', serif;
-    src: url('/font/Spectral/Spectral-Light.ttf');
+    src: url('/font/Spectral/Spectral-Light.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Light', serif;
+    src: url('/font/Work_Sans/WorkSans-Light.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Regular', serif;
+    src: url('/font/Work_Sans/WorkSans-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Medium', serif;
+    src: url('/font/Work_Sans/WorkSans-Medium.ttf') format('ttf');
 }
 
 html {
@@ -15,7 +27,7 @@ html {
 
 body {
   background-color: #f5fbff;
-  font-family: 'Work_Sans-Light', sans-serif;
+  font-family: 'WorkSans-Light', sans-serif;
   font-size: 20px;
   transition: 0.5s;
 }
@@ -78,7 +90,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 
 /* Interactive UI/UX */
 .heading1 {
-  font-family: 'Work_Sans-Thin', sans-serif;
+  font-family: 'WorkSans-Thin', sans-serif;
   font-size: 6vw;
   text-align: justify;
   margin-top: 1em;
@@ -101,7 +113,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 
 /* Technologist, Programmer, Designer, Artist */
 .heading2 {
-  font-family: 'Work_Sans-Light', sans-serif;
+  font-family: 'WorkSans-Light', sans-serif;
   font-size: 2vw;
   line-height: 1.5em;
   text-align: right;
@@ -140,7 +152,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .intro {
-  font-family: "Work_Sans-Light", sans-serif;
+  font-family: "WorkSans-Light", sans-serif;
   font-size: 15px;
   text-align: justify;
   line-height: 1.5;
@@ -169,7 +181,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   justify-content: center;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: "Work_Sans-Light", sans-serif;
+  font-family: "WorkSans-Light", sans-serif;
   color: black;
 }
 
@@ -253,7 +265,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .info {
-  font-family: "Work_Sans-Light", sans-serif;
+  font-family: "WorkSans-Light", sans-serif;
   font-size: 18px;
   line-height: 1.6;
   text-align: justify;
@@ -291,10 +303,6 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 .project-wrapper {
   width: 100vh;
   height: 99vw;
-  transform: rotate(270deg) translateX(-100%);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
   position: fixed;
   display: block;
   scrollbar-width: 100px;
@@ -302,43 +310,13 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .project {
-  background: rgba(255, 255, 255, 1);
+  background: white;
   width: 90vw;
-  transform: rotate(90deg) translateY(-666px);
-  transform-origin: top left;
-  overflow-y: hidden;
   margin: 5vw 0 900px 0;
   border: 0;
   padding: 0;
 }
 
-/* @media (max-width: 767.98px) {
-  -webkit-overflow-scrolling: touch;
-} */
-
-/* Designing for scroll-bar */
-/* * {
-  overflow-y: hidden;
-}
-::-webkit-scrollbar {
-  transform: rotate(-270deg) translateX(100%);
-  transform: rotate(90deg) translateY(666px);
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 500px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5000px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-} */
 /* Project Names */
 h3 {
   font-family: 'Work Sans', sans-serif;
@@ -374,16 +352,16 @@ h3 {
   }
 }
 
-/* Domains */
+/* Project Domains */
 .domain {
-  font-family: "Work_Sans-Medium";
+  font-family: "WorkSans-Medium";
   font-size: 22px;
   padding: 20px 0 24px 0;
 }
 
-/* Synopses */
+/* Project Synopses */
 .synopsis {
-  font-family: "Work_Sans-Light";
+  font-family: "WorkSans-Light";
   font-size: 18px;
   line-height: 1.3;
   margin: 0 0 40px 0;
@@ -421,12 +399,12 @@ a:active {
 
 
 @media (max-width: 575.98px) {
-  .arrow, .demo{
+  .arrow, .demo {
     display: none;
   }
 }
 
-/* Carousel */
+/* Demo Carousel */
 * {
   box-sizing: border-box;
   scrollbar-color: transparent transparent;
@@ -547,17 +525,6 @@ ol, li {
   padding: 0;
 }
 
-/* Synopses on Detail Pages*/
-/* .detailText {
-  font-family: "WorkSans-Regular";
-  font-size: 18px;
-  line-height: 1.3;
-  color: black;
-  text-align: left;
-  margin: 20px 12px 40px 12px;
-  border: 0;
-  padding: 0;
-} */
 /* Sections */
 h6 {
   font-family: "WorkSans-Bold";
