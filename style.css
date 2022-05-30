@@ -9,16 +9,24 @@
     src: url('/font/Spectral-Light.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'WorkSans-Light', serif;
+    font-family: 'WorkSans-Light', sans-serif;
     src: url('/font/WorkSans-Light.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'WorkSans-Regular', serif;
+    font-family: 'WorkSans-Regular', sans-serif;
     src: url('/font/WorkSans-Regular.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'WorkSans-Medium', serif;
+    font-family: 'WorkSans-Medium', sans-serif;
     src: url('/font/WorkSans-Medium.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'WorkSans-Bold', sans-serif;
+    src: url('/font/WorkSans-Bold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Lato-Thin', sans-serif;
+    src: url('/font/Lato-Thin') format('ttf');
 }
 
 html {
@@ -27,7 +35,7 @@ html {
 
 body {
   background-color: #f5fbff;
-  font-family: 'WorkSans-Light', sans-serif;
+  font-family: 'Lato-Thin', sans-serif;
   font-size: 20px;
   transition: 0.5s;
 }
@@ -301,25 +309,28 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .project-wrapper {
-  width: 100vh;
-  height: 99vw;
-  position: fixed;
-  display: block;
-  scrollbar-width: 100px;
-  -ms-overflow-style: none;
+  margin: 5em 0 0 0;
+  align-content: center;
 }
 
 .project {
   background: white;
-  width: 90vw;
-  margin: 5vw 0 900px 0;
+  width: 90%;
+  height: auto;
+  padding: 0 1vw 0 2vw;
+  margin: auto;
   border: 0;
-  padding: 0;
 }
 
-/* Project Names */
-h3 {
-  font-family: 'Work Sans', sans-serif;
+@media (min-width: 1200px) {
+  .project{
+    width: 70%;
+  }
+}
+
+/* Project Titles */
+.title {
+  font-family: 'WorkSans-Bold', sans-serif;
   font-size: 30px;
   padding: 18px 0 24px 0;
   margin: 0;
