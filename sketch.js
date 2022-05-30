@@ -1,6 +1,9 @@
 var canvas;
 var myTurtle;
 
+// resizing window allows the window to refresh and recreate the graphics,
+// but it gets buggy and laggy on mobile so i got rid of it.
+// also the static positioning of the tree works well on web.
 // function windowResized() {
 //   resizeCanvas(windowWidth, windowHeight);
 // }
