@@ -5,7 +5,11 @@
 
 @font-face {
   font-family: 'Spectral-Light', serif;
-  src: url('font/Spectral-Light.ttf') format('ttf');
+  src: url("font/Spectral-Light.ttf") format('ttf'),
+  url("font/Spectral-Light.eot") format("eot"),
+  url("font/Spectral-Light.woff") format("woff"),
+  url("font/Spectral-Light.otf") format("opentype"),
+  url("font/Spectral-Light.svg") format("svg");
 }
 
 @font-face {
