@@ -26,7 +26,7 @@
 }
 @font-face {
     font-family: 'Lato-Thin', sans-serif;
-    src: url('/font/Lato-Thin') format('ttf');
+    src: url('/font/Lato-Thin.ttf') format('ttf');
 }
 
 html {
@@ -543,7 +543,6 @@ ol, li {
 h6 {
   font-family: "WorkSans-Bold";
   font-size: 20px;
-  line-height: 1.4;
   color: black;
   text-align: right;
   margin: 40px 0 40px 0;
@@ -553,12 +552,17 @@ h6 {
 
 /* Texts */
 p {
-  font-family: "WorkSans-Regular";
+  font-family: "Lato-Thin" sans-serif;
   font-size: 16px;
-  line-height: 1.3;
   color: black;
   text-align: left;
   margin: 20px 0 20px 0;
   border: 0;
   padding: 0;
+}
+
+@media (max-width: 575.98px) {
+  p {
+    font-size: 10px;
+  }
 }
