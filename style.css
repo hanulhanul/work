@@ -309,7 +309,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .project-wrapper {
-  margin: 1vw 0 0 0;
+  margin: 10vw 0 0 0;
   align-content: center;
 }
 
@@ -323,6 +323,9 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 @media (min-width: 1200px) {
+  .project-wrapper {
+    margin: 1vw 0 0 0;
+  }
   .project{
     width: 70%;
   }
