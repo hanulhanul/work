@@ -384,7 +384,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 .title {
   font-family: 'WorkSans-Bold', sans-serif;
   font-size: 30px;
-  padding: 18px 0 24px 0;
+  padding: 1.5vw 0 2vw 0;
   margin: 0;
   border: 0;
 }
@@ -392,6 +392,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 @media (max-width: 575.98px) {
   .title {
     font-size: 24px;
+    padding: 1vw 0 1vw 0;
   }
 }
 
@@ -425,12 +426,13 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 .domain {
   font-family: 'WorkSans-Medium';
   font-size: 22px;
-  padding: 20px 0 24px 0;
+  padding: 2vw 0 2vw 0;
 }
 
 @media (max-width: 575.98px) {
   .domain {
     font-size: 16px;
+    padding: 1vw 0 1vw 0;
   }
 }
 
@@ -447,6 +449,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 @media (max-width: 575.98px) {
   .synopsis {
     font-size: 12px;
+    margin: 0 0 20px 0;
   }
 }
 
@@ -513,9 +516,15 @@ ol, li {
 .carousel {
   position: relative;
   padding-top: 70%;
-  margin: 0 5px 40px 0;
+  margin: 0 -5px 40px -10px;
   transition: 0.5s;
   filter: drop-shadow(0 0 10px #0003);
+}
+
+@media (max-width: 575.98px) {
+  carousel {
+    margin: 0 -5px 20px -10px;
+  }
 }
 
 .carousel__viewport {
@@ -574,9 +583,15 @@ ol, li {
 }
 
 .oneImage {
-  margin: 0 5px 40px 0;
+  margin: 0 -5px 30px -10px;
   border: 0;
   padding: 0;
+}
+
+@media (max-width: 575.98px) {
+  .oneImage {
+    margin: 0 -5px 20px -10px;
+  }
 }
 
 /* HCI.html */
