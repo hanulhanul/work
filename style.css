@@ -354,7 +354,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .project-wrapper {
-  margin: 10vw 0 10vw 0;
+  margin: 100px 0 50px 0;
   align-content: center;
 }
 
@@ -523,7 +523,7 @@ ol, li {
 
 @media (max-width: 575.98px) {
   carousel {
-    margin: 0 -5px 20px -10px;
+    margin: 0 -5px 10px -10px;
   }
 }
 
