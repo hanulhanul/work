@@ -14,32 +14,38 @@
 
 @font-face {
   font-family: 'WorkSans-Light', sans-serif;
-  src: url('font/WorkSans-Light.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'WorkSans-Regular', sans-serif;
-  src: url('font/WorkSans-Regular.ttf') format('ttf');
+  src: url('font/WorkSans-Light.ttf') format('ttf'),
+  url("font/WorkSans-Light.eot") format("eot"),
+  url("font/WorkSans-Light.woff") format("woff"),
+  url("font/WorkSans-Light.otf") format("opentype"),
+  url("font/WorkSans-Light.svg") format("svg");
 }
 
 @font-face {
   font-family: 'WorkSans-Medium', sans-serif;
-  src: url('font/WorkSans-Medium.ttf') format('ttf');
+  src: url('font/WorkSans-Medium.ttf') format('ttf'),
+  url("font/WorkSans-Medium.eot") format("eot"),
+  url("font/WorkSans-Medium.woff") format("woff"),
+  url("font/WorkSans-Medium.otf") format("opentype"),
+  url("font/WorkSans-Medium.svg") format("svg");
 }
 
 @font-face {
   font-family: 'WorkSans-Bold', sans-serif;
-  src: url('font/WorkSans-Bold.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Lato-Light', sans-serif;
-  src: url('font/Lato-Light.ttf') format('ttf');
+  src: url('font/WorkSans-Bold.ttf') format('ttf'),
+  url("font/WorkSans-Bold.eot") format("eot"),
+  url("font/WorkSans-Bold.woff") format("woff"),
+  url("font/WorkSans-Bold.otf") format("opentype"),
+  url("font/WorkSans-Bold.svg") format("svg");
 }
 
 @font-face {
   font-family: 'Lato-Regular', sans-serif;
-  src: url('font/Lato-Regular.ttf') format('ttf');
+  src: url('font/Lato-Regular.ttf') format('ttf'),
+  url("font/Lato-Regular.eot") format("eot"),
+  url("font/Lato-Regular.woff") format("woff"),
+  url("font/Lato-Regular.otf") format("opentype"),
+  url("font/Lato-Regular.svg") format("svg");
 }
 
 html {
