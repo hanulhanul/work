@@ -1,32 +1,41 @@
 /* Google fonts; Lato, Spectral, Work Sans */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* animate.css */
 @import "~animate.css/animate.css";
 
 @font-face {
-    font-family: 'Spectral-Light', serif;
-    src: url('/font/Spectral-Light.ttf') format('ttf');
+  font-family: 'Spectral-Light', serif;
+  src: url('font/Spectral-Light.ttf') format('ttf');
 }
+
 @font-face {
-    font-family: 'WorkSans-Light', sans-serif;
-    src: url('/font/WorkSans-Light.ttf') format('ttf');
+  font-family: 'WorkSans-Light', sans-serif;
+  src: url('font/WorkSans-Light.ttf') format('ttf');
 }
+
 @font-face {
-    font-family: 'WorkSans-Regular', sans-serif;
-    src: url('/font/WorkSans-Regular.ttf') format('ttf');
+  font-family: 'WorkSans-Regular', sans-serif;
+  src: url('font/WorkSans-Regular.ttf') format('ttf');
 }
+
 @font-face {
-    font-family: 'WorkSans-Medium', sans-serif;
-    src: url('/font/WorkSans-Medium.ttf') format('ttf');
+  font-family: 'WorkSans-Medium', sans-serif;
+  src: url('font/WorkSans-Medium.ttf') format('ttf');
 }
+
 @font-face {
-    font-family: 'WorkSans-Bold', sans-serif;
-    src: url('/font/WorkSans-Bold.ttf') format('ttf');
+  font-family: 'WorkSans-Bold', sans-serif;
+  src: url('font/WorkSans-Bold.ttf') format('ttf');
 }
+
 @font-face {
-    font-family: 'Lato-Thin', sans-serif;
-    src: url('/font/Lato-Thin.ttf') format('ttf');
+  font-family: 'Lato-Light', sans-serif;
+  src: url('font/Lato-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Regular', sans-serif;
+  src: url('font/Lato-Regular.ttf') format('ttf');
 }
 
 html {
@@ -35,8 +44,6 @@ html {
 
 body {
   background-color: #f5fbff;
-  font-family: 'Lato-Thin', sans-serif;
-  font-size: 20px;
   transition: 0.5s;
 }
 
@@ -72,6 +79,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   .navbar-brand {
     font-size: 14px;
   }
+
   .nav-item {
     font-size: 14px;
   }
@@ -160,7 +168,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .intro {
-  font-family: "WorkSans-Light", sans-serif;
+  font-family: 'WorkSans-Light', sans-serif;
   font-size: 15px;
   text-align: justify;
   line-height: 1.5;
@@ -189,7 +197,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   justify-content: center;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: "WorkSans-Light", sans-serif;
+  font-family: 'WorkSans-Light', sans-serif;
   color: black;
 }
 
@@ -273,7 +281,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 .info {
-  font-family: "WorkSans-Light", sans-serif;
+  font-family: 'WorkSans-Light', sans-serif;
   font-size: 18px;
   line-height: 1.6;
   text-align: justify;
@@ -326,7 +334,8 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   .project-wrapper {
     margin: 1vw 0 0 0;
   }
-  .project{
+
+  .project {
     width: 70%;
   }
 }
@@ -368,14 +377,14 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 
 /* Project Domains */
 .domain {
-  font-family: "WorkSans-Medium";
+  font-family: 'WorkSans-Medium';
   font-size: 22px;
   padding: 20px 0 24px 0;
 }
 
 /* Project Synopses */
 .synopsis {
-  font-family: "WorkSans-Light";
+  font-family: 'WorkSans-Light';
   font-size: 18px;
   line-height: 1.3;
   margin: 0 0 40px 0;
@@ -410,7 +419,6 @@ a:visited {
 a:active {
   text-decoration: none;
 }
-
 
 @media (max-width: 575.98px) {
   .arrow, .demo {
@@ -541,7 +549,7 @@ ol, li {
 
 /* Sections */
 h6 {
-  font-family: "WorkSans-Bold";
+  font-family: 'WorkSans-Bold';
   font-size: 20px;
   color: black;
   text-align: right;
@@ -550,9 +558,16 @@ h6 {
   padding: 0;
 }
 
+@media (max-width: 575.98px) {
+  h6 {
+    font-size: 14px;
+    margin: 40px 0 0 0;
+  }
+}
+
 /* Texts */
 p {
-  font-family: "Lato-Thin" sans-serif;
+  font-family: 'Lato-Regular', sans-serif;
   font-size: 16px;
   color: black;
   text-align: left;
@@ -564,5 +579,6 @@ p {
 @media (max-width: 575.98px) {
   p {
     font-size: 10px;
+    margin: 20px 0 20px 0;
   }
 }
