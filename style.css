@@ -478,12 +478,6 @@ a:active {
   text-decoration: none;
 }
 
-@media (max-width: 575.98px) {
-  .arrow, .demo {
-    display: none;
-  }
-}
-
 /* Demo Carousel */
 * {
   box-sizing: border-box;
