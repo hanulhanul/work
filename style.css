@@ -96,11 +96,6 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   color: black;
 }
 
-.clicked {
-  cursor: pointer;
-  text-shadow: white 0 0 5px, white 0 0 10px, white 0 0 0.2rem;
-}
-
 .navbar-brand {
   font-family: 'Spectral-Light', serif;
   font-size: 22px;
