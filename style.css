@@ -136,10 +136,10 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   margin-bottom: 10em;
 }
 
-/* Interactive UI/UX */
+/* Creative Technology */
 .heading1 {
   font-family: 'WorkSans-Thin', sans-serif;
-  font-size: 6vw;
+  font-size: 4vw;
   text-align: justify;
   margin-top: 1em;
   margin-bottom: 2em;
@@ -170,9 +170,8 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 
 @media only screen and (max-width: 991.98px) {
   .heading1 {
-    font-size: 7vw;
+    font-size: 5vw;
   }
-
   .heading2 {
     font-size: 3vw;
   }
@@ -180,9 +179,8 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 
 @media (max-width: 767.98px) {
   .heading1 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
-
   .heading2 {
     font-size: 4vw;
   }
