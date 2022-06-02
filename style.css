@@ -63,6 +63,12 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   padding: 4em;
 }
 
+div {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 @media (max-width: 575.98px) {
   #content {
     padding: 4em 1em 1em 1em;
@@ -547,36 +553,58 @@ ol, li {
 
 /* Sections */
 .section {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 20px;
   color: black;
   text-align: right;
-  margin: 40px 0 40px 0;
+  margin: 5vw 0 5vw 0;
   border: 0;
   padding: 0;
 }
 
 @media (max-width: 575.98px) {
-  h6 {
+  .section {
     font-size: 14px;
-    margin: 40px 0 0 0;
+    margin: 5vw 0 5vw 0;
+  }
+}
+
+/* Subjects */
+.subject {
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  margin: 2vw 0 2vw 0;
+  border: 0;
+  padding: 0;
+}
+
+@media (max-width: 575.98px) {
+  .subject {
+    font-size: 12px;
+    margin: 10px 0 20px 0;
+    border: 0;
+    padding: 0;
   }
 }
 
 /* Texts */
-p {
+.text {
   font-weight: 400;
   font-size: 16px;
   color: black;
   text-align: left;
-  margin: 20px 0 20px 0;
+  margin: 2vw 0 2vw 0;
   border: 0;
   padding: 0;
 }
 
 @media (max-width: 575.98px) {
-  p {
+  .text {
     font-size: 10px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
+    border: 0;
+    padding: 0;
   }
 }
