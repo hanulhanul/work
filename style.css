@@ -87,14 +87,12 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   background: #FFFFE0;
 }
 
-.animate__animated.animate__jello {
-  --animate-duration: 4s;
-  --animate-delay: 1s;
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 2s;
 }
 
 .animate__animated.animate__bounceInRight {
-  --animate-duration: 2s;
-  --animate-delay: 0s;
+  --animate-duration: 3s;
 }
 
 /* Technologist, Programmer, Designer, Artist */
