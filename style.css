@@ -548,7 +548,7 @@ ol, li {
 }
 
 /* Sections */
-h6 {
+.section {
   font-weight: 900;
   font-size: 20px;
   color: black;
