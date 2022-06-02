@@ -137,7 +137,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
   height: auto;
 }
 
-.intro {
+.info-main {
   font-weight: 300;
   font-size: 18px;
   text-align: justify;
@@ -146,7 +146,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 }
 
 @media (max-width: 575.98px) {
-  .intro {
+  .info-main {
     font-size: 12px;
   }
 }
