@@ -137,9 +137,9 @@ div {
 }
 
 .profile-image {
-  width: 2vw;
+  width: 100%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 100px;
 }
 
 .info-main {
