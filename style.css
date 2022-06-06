@@ -1,6 +1,5 @@
 /* animate.css */
 @import "~animate.css/animate.css";
-
 /* Inter, variable font */
 @import url('https://rsms.me/inter/inter.css');
 
@@ -42,7 +41,7 @@ section nav.navbar a.navbar-brand, section nav.navbar ul.navbar-nav a.nav-item {
 .nav-item {
   font-weight: 300;
   font-size: 22px;
-  padding-left: 4vw;
+  margin: 0 0 0 2vw;
 }
 
 @media (max-width: 575.98px) {
@@ -139,7 +138,7 @@ div {
 .profile-image {
   width: 100%;
   height: auto;
-  border-radius: 100px;
+  border-radius: 10vw;
 }
 
 .info-main {
@@ -298,7 +297,6 @@ div {
 }
 
 .project-wrapper {
-  margin: 100px 0 50px 0;
   align-content: center;
 }
 
@@ -307,8 +305,7 @@ div {
   width: 90%;
   height: auto;
   padding: 0 1vw 0 2vw;
-  margin: auto;
-  border: 0;
+  margin: 70px auto 7vw auto;
 }
 
 @media (min-width: 1200px) {
@@ -318,9 +315,8 @@ div {
 }
 
 @media (max-width: 575.98px) {
-  .project-wrapper {
-    margin: 15vw 0 10vw 0;
-    align-content: center;
+  .project {
+    margin: 35px auto 3.5vw auto;
   }
 }
 
@@ -341,28 +337,28 @@ div {
 }
 
 .colorful {
-  animation: Colorful 0.5s ease-out infinite;
+  animation: Colorful 5s ease-out infinite;
 }
 
 @keyframes Colorful {
   0% {
-    color: #d36290;
+    color: #0974f1;
   }
 
   25% {
-    color: #773144;
+    color: #9fccfa;
   }
 
   50% {
-    color: #241c5c;
+    color: #0974f1;
   }
 
   75% {
-    color: #772144;
+    color: #9fccfa;
   }
 
   100% {
-    color: #d36290;
+    color: #0974f1;
   }
 }
 
@@ -458,7 +454,7 @@ ol, li {
 .carousel {
   position: relative;
   padding-top: 70%;
-  margin: 0 -5px 40px -10px;
+  margin: 0 -5px 20px -10px;
   transition: 0.5s;
   filter: drop-shadow(0 0 10px #0003);
 }
@@ -525,7 +521,7 @@ ol, li {
 }
 
 .oneImage {
-  margin: 0 -5px 30px -10px;
+  margin: 0 -5px 20px -10px;
   border: 0;
   padding: 0;
 }
